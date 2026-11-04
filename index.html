@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gerhard Malberg — Electronics &amp; Embedded Engineer | Open-source hardware | PCB FEM simulation | C &amp; Python">
+<title>Gerhard Malberg</title>
+<link rel="icon" href="data:,">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: #fafaf8;
+    color: #202724;
+    font: 1rem/1.7 system-ui, sans-serif;
+  }
+  main { width: max-content; max-width: 100%; min-width: 0; }
+  h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -.035em;
+  }
+  p {
+    margin: 0 0 1.5rem;
+    color: #505952;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  a {
+    display: inline-block;
+    padding-block: .5rem;
+    color: #165d46;
+    font-weight: 600;
+    text-underline-offset: .25em;
+  }
+  main > a { font-size: 1.125rem; }
+  a:hover { color: #0b3f2e; }
+  a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: min(44rem, calc(100vw - 4rem));
+    margin-top: 2rem;
+  }
+  figure { margin: 0; }
+  figure a { display: block; padding: 0; }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+  }
+  figcaption { margin-top: .5rem; font-size: .875rem; color: #505952; }
+  @media (max-width: 32rem) {
+    .gallery { grid-template-columns: 1fr; }
+  }
+</style>
+<main>
+  <h1>Gerhard Malberg</h1>
+  <p>Electronics &amp; Embedded Engineer | Open-source hardware | PCB FEM simulation | C &amp; Python</p>
+  <a href="https://github.com/gerhardmalberg?tab=repositories">View my GitHub repositories <span aria-hidden="true">→</span></a>
+  <div class="gallery">
+    <figure>
+      <a href="images/pcb.png"><img src="images/pcb.png" width="2400" height="1600" loading="lazy" decoding="async" alt="Ray-traced populated BMS PCB, angled top view"></a>
+      <figcaption>PCB</figcaption>
+    </figure>
+    <figure>
+      <a href="images/em.png"><img src="images/em.png" width="1200" height="800" loading="lazy" decoding="async" alt="COMH normalized differential electric-field section at 4 MHz; provisional EM result"></a>
+      <figcaption>EM simulation</figcaption>
+    </figure>
+    <figure>
+      <a href="images/thermal.png"><img src="images/thermal.png" width="1500" height="1000" loading="lazy" decoding="async" alt="Provisional automatic balancing temperature simulation, isometric view, 25 degrees Celsius ambient and h=10 W/m²K"></a>
+      <figcaption>Thermal simulation</figcaption>
+    </figure>
+    <figure>
+      <a href="images/mechanical.png"><img src="images/mechanical.png" width="800" height="400" loading="lazy" decoding="async" alt="Provisional PCB acceleration RMS response to independent Z-axis base excitation of 1 g RMS over 20–2000 Hz"></a>
+      <figcaption>Modal and PSD</figcaption>
+    </figure>
+  </div>
+</main>
+</html>
